@@ -137,21 +137,35 @@ document.querySelectorAll(".copy-btn").forEach((btn) => {
   });
 });
 
-/* ── FORM SUBMIT (feedback visual) ── */
+/* ── FORM SUBMIT (Redirect WhatsApp) ── */
 const formSubmit = document.getElementById("formSubmit");
 if (formSubmit) {
   formSubmit.addEventListener("click", () => {
+    const nama   = document.getElementById("namaInput")?.value.trim() || "";
+    const email  = document.getElementById("emailInput")?.value.trim() || "";
+    const subjek = document.getElementById("subjekInput")?.value.trim() || "";
+    const pesan  = document.getElementById("pesanInput")?.value.trim() || "";
+
+    // Berikan feedback visual singkat
     formSubmit.disabled = true;
-    formSubmit.innerHTML = '<i data-lucide="check"></i> Pesan Terkirim!';
-    formSubmit.style.background = "var(--green-mid)";
+    formSubmit.innerHTML = '<i data-lucide="loader"></i> Memproses...';
     if (typeof lucide !== "undefined") lucide.createIcons();
 
+    // Susun pesan WhatsApp
+    let waText = `Halo, %0A%0A`;
+    if (nama) waText += `*Nama:* ${nama}%0A`;
+    if (email) waText += `*Email:* ${email}%0A`;
+    if (subjek) waText += `*Subjek:* ${subjek}%0A%0A`;
+    if (pesan) waText += `*Pesan:*%0A${pesan}`;
+
+    // Arahkan ke WhatsApp API + Kembalikan state tombol (jika tab kembali)
     setTimeout(() => {
+      window.open(`https://wa.me/6285122649886?text=${waText}`, "_blank");
+      
       formSubmit.disabled = false;
       formSubmit.innerHTML = '<i data-lucide="send"></i> Kirim Pesan';
-      formSubmit.style.background = "";
       if (typeof lucide !== "undefined") lucide.createIcons();
-    }, 2800);
+    }, 600);
   });
 }
 
