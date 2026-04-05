@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Panti Asuhan Cahaya Harapan Indonesia – Memberikan kasih sayang, pendidikan, dan bimbingan bagi anak-anak Indonesia sejak 2005." />
+    <meta name="keywords" content="panti asuhan, donasi, anak yatim, Jakarta, pendidikan, Cahaya Harapan" />
+    <title>Panti Asuhan Cahaya Harapan Indonesia</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- ── NAVIGASI ── -->
+    <nav id="navbar">
+      <a class="nav-logo" href="#">
+        <div class="nav-logo-icon">
+          <i data-lucide="leaf"></i>
+        </div>
+        <div class="nav-logo-text">
+          <strong>Panti Asuhan Cahaya Harapan</strong>
+          <span>Indonesia &middot; Est. 2005</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="#donasi" class="nav-cta">Donasi Sekarang</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ── MOBILE SIDEBAR (di luar nav agar tidak terkena stacking context backdrop-filter) ── -->
+    <aside class="mobile-sidebar" id="mobileSidebar" aria-label="Navigasi Mobile">
+      <div class="sidebar-header">
+        <div class="nav-logo">
+          <div class="nav-logo-icon"><i data-lucide="leaf"></i></div>
+          <div class="nav-logo-text">
+            <strong>Cahaya Harapan</strong>
+            <span>Panti Asuhan</span>
+          </div>
+        </div>
+        <button class="sidebar-close" id="sidebarClose" aria-label="Tutup menu">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <nav class="sidebar-nav">
+        <ul class="sidebar-links">
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <a href="#donasi" class="sidebar-cta">
+          <i data-lucide="heart"></i>
+          Donasi Sekarang
+        </a>
+      </nav>
+    </aside>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i data-lucide="flag"></i>
+            Melayani dengan Ikhlas
+          </div>
+          <h1 class="hero-title">
+            Memberikan <em>Harapan</em><br />
+            untuk Masa Depan<br />
+            yang Cerah
+          </h1>
+          <p class="hero-desc">
+            Panti Asuhan Cahaya Harapan hadir sebagai rumah kedua bagi anak-anak
+            yang membutuhkan kasih sayang, pendidikan, dan bimbingan untuk tumbuh
+            menjadi generasi Indonesia yang berkarakter dan berdaya.
+          </p>
+          <div class="hero-actions">
+            <a href="#program" class="btn-primary">
+              <i data-lucide="sprout"></i>
+              Lihat Program
+            </a>
+            <a href="#donasi" class="btn-secondary">
+              <i data-lucide="heart"></i>
+              Mari Berdonasi
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">247<span>+</span></div>
+              <div class="stat-label">Anak Binaan</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">19<span>+</span></div>
+              <div class="stat-label">Tahun Berkarya</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">92<span>%</span></div>
+              <div class="stat-label">Lulus Sarjana</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="assets/hero.jpg"
+            alt="Anak-anak panti asuhan belajar bersama dengan penuh semangat"
+            width="900"
+          />
+          <div class="hero-visual-badge">
+            <i data-lucide="award"></i>
+            <span>Yayasan Terakreditasi <strong>A</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TENTANG ── -->
+    <section class="about" id="tentang">
+      <div class="about-grid">
+        <div class="about-visual">
+          <img
+            src="assets/about.jpg"
+            alt="Kebersamaan anak-anak dan pengasuh di panti asuhan"
+            loading="lazy"
+            width="800"
+          />
+          <div class="about-navy-badge">
+            <i data-lucide="building-2"></i>
+            Yayasan Terakreditasi A
+          </div>
+          <div class="about-card-main">
+            <h3>"Setiap Anak adalah Bintang yang Menunggu Bersinar"</h3>
+            <p>
+              Kami percaya bahwa setiap anak berhak mendapatkan kesempatan yang
+              sama, tanpa memandang latar belakang keluarga.
+            </p>
+          </div>
+          <div class="about-card-accent">
+            <div class="big">500<span style="font-size:22px">+</span></div>
+            <div class="small">Alumni Sukses</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-tag">
+            <i data-lucide="info"></i>
+            Tentang Kami
+          </div>
+          <h2>Lebih dari Sekadar Tempat <span>Berlindung</span></h2>
+          <p>
+            Didirikan pada tahun 2005, Panti Asuhan Cahaya Harapan telah menjadi
+            rumah bagi ratusan anak yatim, piatu, dan dhuafa dari seluruh pelosok
+            Indonesia. Kami tidak hanya menyediakan tempat tinggal, tetapi juga
+            membentuk karakter dan potensi setiap anak.
+          </p>
+          <p>
+            Dengan pendekatan holistik yang menggabungkan pendidikan formal,
+            pembinaan spiritual, dan pengembangan keterampilan, kami memastikan
+            setiap anak tumbuh menjadi pribadi yang mandiri dan berintegritas.
+          </p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon"><i data-lucide="book-open"></i></div>
+              <div class="pillar-text">
+                <strong>Pendidikan</strong>
+                <span>SD hingga Perguruan Tinggi</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i data-lucide="moon-star"></i></div>
+              <div class="pillar-text">
+                <strong>Spiritual</strong>
+                <span>Bimbingan moral &amp; agama</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i data-lucide="dumbbell"></i></div>
+              <div class="pillar-text">
+                <strong>Olahraga</strong>
+                <span>Pembinaan fisik &amp; tim</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i data-lucide="palette"></i></div>
+              <div class="pillar-text">
+                <strong>Seni &amp; Budaya</strong>
+                <span>Ekspresi &amp; kreativitas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROGRAM ── -->
+    <section class="programs" id="program">
+      <div class="section-header">
+        <div class="section-tag">
+          <i data-lucide="layout-grid"></i>
+          Apa yang Kami Lakukan
+        </div>
+        <h2 class="section-title">Program Unggulan Kami</h2>
+        <p class="section-desc">
+          Rangkaian program yang dirancang untuk membekali anak dengan ilmu,
+          keterampilan, dan akhlak mulia agar siap menghadapi masa depan.
+        </p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card green">
+          <div class="program-icon green-icon">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <h3>Beasiswa Pendidikan</h3>
+          <p>
+            Mendukung biaya pendidikan dari tingkat dasar hingga perguruan tinggi,
+            termasuk seragam, buku, dan perlengkapan belajar.
+          </p>
+          <span class="program-tag tag-green">Aktif &middot; 247 anak</span>
+        </div>
+        <div class="program-card navy">
+          <div class="program-icon navy-icon">
+            <i data-lucide="laptop"></i>
+          </div>
+          <h3>Pelatihan Digital</h3>
+          <p>
+            Kelas coding, desain grafis, dan literasi digital untuk mempersiapkan
+            anak menghadapi dunia kerja modern.
+          </p>
+          <span class="program-tag tag-navy">Teknologi &middot; Gratis</span>
+        </div>
+        <div class="program-card red">
+          <div class="program-icon red-icon">
+            <i data-lucide="stethoscope"></i>
+          </div>
+          <h3>Kesehatan &amp; Gizi</h3>
+          <p>
+            Pemeriksaan kesehatan rutin, asupan gizi seimbang, dan layanan
+            kesehatan jiwa untuk tumbuh kembang optimal.
+          </p>
+          <span class="program-tag tag-red">Prioritas Utama</span>
+        </div>
+        <div class="program-card navy">
+          <div class="program-icon green-icon">
+            <i data-lucide="sprout"></i>
+          </div>
+          <h3>Keterampilan Pertanian</h3>
+          <p>
+            Program berkebun dan bercocok tanam sebagai bentuk kemandirian pangan
+            dan pendidikan lingkungan hidup.
+          </p>
+          <span class="program-tag tag-navy">Kemandirian</span>
+        </div>
+        <div class="program-card red">
+          <div class="program-icon red-icon">
+            <i data-lucide="music"></i>
+          </div>
+          <h3>Seni &amp; Budaya Lokal</h3>
+          <p>
+            Melestarikan kesenian Nusantara melalui tari tradisional, gamelan, dan
+            pertunjukan budaya antardaerah.
+          </p>
+          <span class="program-tag tag-red">Budaya Bangsa</span>
+        </div>
+        <div class="program-card green">
+          <div class="program-icon navy-icon">
+            <i data-lucide="users"></i>
+          </div>
+          <h3>Pengasuhan Berbasis Keluarga</h3>
+          <p>
+            Sistem pembinaan dengan orang tua asuh yang menciptakan lingkungan
+            keluarga yang hangat dan penuh kasih sayang.
+          </p>
+          <span class="program-tag tag-green">Prioritas Keluarga</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALERI ── -->
+    <section class="gallery" id="galeri">
+      <div class="section-header">
+        <div class="section-tag">
+          <i data-lucide="image"></i>
+          Momen Kehidupan
+        </div>
+        <h2 class="section-title">Galeri Kebahagiaan</h2>
+        <p class="section-desc">
+          Setiap hari adalah hadiah. Inilah momen-momen indah yang menjadi
+          kekuatan kami untuk terus berjuang bersama.
+        </p>
+      </div>
+      <div class="gallery-mosaic">
+        <div class="gallery-item">
+          <img src="assets/gallery-1.jpg" alt="Anak-anak belajar bersama" loading="lazy" />
+          <div class="gallery-caption">Semangat Belajar</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/gallery-2.jpg" alt="Kegiatan olahraga bersama" loading="lazy" />
+          <div class="gallery-caption">Aktivitas Olahraga</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/gallery-3.jpg" alt="Workshop seni dan kreativitas" loading="lazy" />
+          <div class="gallery-caption">Workshop Seni</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/gallery-4.jpg" alt="Program berkebun dan pertanian" loading="lazy" />
+          <div class="gallery-caption">Program Berkebun</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/gallery-5.jpg" alt="Momen perayaan bersama" loading="lazy" />
+          <div class="gallery-caption">Momen Perayaan</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DONASI ── -->
+    <section class="donation" id="donasi">
+      <div class="donation-inner">
+        <div class="donation-tag">
+          <i data-lucide="heart"></i>
+          Bergabunglah Bersama Kami
+        </div>
+        <h2>Donasi Anda Mengubah<br />Satu Kehidupan</h2>
+        <p>
+          Kontribusi sekecil apapun berarti sangat besar bagi masa depan
+          anak-anak kami. Bersama kita bisa!
+        </p>
+        <div class="donation-amounts">
+          <button class="amount-btn" data-amount="Rp 50.000">Rp 50.000</button>
+          <button class="amount-btn active" data-amount="Rp 100.000">Rp 100.000</button>
+          <button class="amount-btn" data-amount="Rp 250.000">Rp 250.000</button>
+          <button class="amount-btn" data-amount="Rp 500.000">Rp 500.000</button>
+          <button class="amount-btn" data-amount="Nominal Pilihan">Nominal Lain</button>
+        </div>
+        <button class="donation-btn" id="donasiBtn" type="button">
+          <i data-lucide="heart"></i>
+          Donasi Sekarang
+        </button>
+        <p class="donation-info">
+          <i data-lucide="shield-check"></i>
+          Donasi aman &amp; terpercaya &nbsp;&middot;&nbsp; Transfer bank &amp; QRIS &nbsp;&middot;&nbsp; Laporan transparan
+        </p>
+      </div>
+    </section>
+
+    <!-- ── MODAL DONASI ── -->
+    <div class="modal-overlay" id="donasiModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal">
+        <button class="modal-close" id="modalClose" aria-label="Tutup">
+          <i data-lucide="x"></i>
+        </button>
+        <div class="modal-header">
+          <div class="modal-icon-wrap">
+            <i data-lucide="heart"></i>
+          </div>
+          <h3 id="modalTitle">Donasi <span id="modalAmount">Rp 100.000</span></h3>
+          <p>Terima kasih! Pilih metode pembayaran Anda:</p>
+        </div>
+
+        <div class="bank-accounts">
+          <div class="bank-item">
+            <div class="bank-logo bca">BCA</div>
+            <div class="bank-info">
+              <span class="bank-name">Bank BCA</span>
+              <span class="bank-number">8765432100</span>
+              <span class="bank-holder">a.n. Sample Bank</span>
+            </div>
+            <button class="copy-btn" data-copy="8765432100" type="button">
+              <i data-lucide="copy"></i>
+              Salin
+            </button>
+          </div>
+          <div class="bank-item">
+            <div class="bank-logo bsi">BSI</div>
+            <div class="bank-info">
+              <span class="bank-name">BSI (Bank Syariah Indonesia)</span>
+              <span class="bank-number">7171717171</span>
+              <span class="bank-holder">a.n. Sample Bank</span>
+            </div>
+            <button class="copy-btn" data-copy="7171717171" type="button">
+              <i data-lucide="copy"></i>
+              Salin
+            </button>
+          </div>
+          <div class="bank-item">
+            <div class="bank-logo bri">BRI</div>
+            <div class="bank-info">
+              <span class="bank-name">Bank BRI</span>
+              <span class="bank-number">009601008765309</span>
+              <span class="bank-holder">a.n. Sample Bank</span>
+            </div>
+            <button class="copy-btn" data-copy="009601008765309" type="button">
+              <i data-lucide="copy"></i>
+              Salin
+            </button>
+          </div>
+        </div>
+
+        <div class="qris-section">
+          <div class="qris-divider"><span>atau bayar via QRIS</span></div>
+          <div class="qris-wrapper">
+            <img src="assets/qris.jpg" alt="QR Code QRIS Panti Asuhan Cahaya Harapan Indonesia" />
+            <p class="qris-note">Scan dengan aplikasi e-wallet atau m-banking manapun</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── KONTAK ── -->
+    <section class="contact" id="kontak">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-tag">
+            <i data-lucide="message-circle"></i>
+            Hubungi Kami
+          </div>
+          <h2>Ada yang Ingin <span>Anda Sampaikan?</span></h2>
+          <p>
+            Ada pertanyaan, ingin menjadi relawan, atau menjalin kemitraan?
+            Kami dengan senang hati mendengar dari Anda.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-item-text">
+                <strong>Alamat</strong>
+                <span>Jl. Cahaya Harapan No. 12, Kelurahan Menteng,<br />Jakarta Pusat, DKI Jakarta 10310</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-item-text">
+                <strong>Telepon</strong>
+                <span>(021) 3141-5926</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-item-text">
+                <strong>Email</strong>
+                <span>info@cahayaharapan.id</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="clock"></i></div>
+              <div class="contact-item-text">
+                <strong>Jam Operasional</strong>
+                <span>Senin &ndash; Sabtu: 08.00 &ndash; 16.00 WIB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Kirim Pesan</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="namaInput">Nama Lengkap</label>
+              <input type="text" id="namaInput" placeholder="Ahmad Fauzi" />
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email</label>
+              <input type="email" id="emailInput" placeholder="email@anda.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subjekInput">Subjek</label>
+            <input type="text" id="subjekInput" placeholder="Perihal pesan Anda" />
+          </div>
+          <div class="form-group">
+            <label for="pesanInput">Pesan</label>
+            <textarea id="pesanInput" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."></textarea>
+          </div>
+          <button class="form-submit" id="formSubmit" type="button">
+            <i data-lucide="send"></i>
+            Kirim Pesan
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GOOGLE MAPS ── -->
+    <section class="maps-section">
+      <div class="maps-inner">
+        <div class="section-header" style="margin-bottom:32px">
+          <div class="section-tag">
+            <i data-lucide="map-pin"></i>
+            Lokasi Kami
+          </div>
+          <h2 class="section-title">Temukan Kami di Sini</h2>
+        </div>
+        <div class="maps-frame">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.83080261476898!3d-6.186486495511426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMenteng%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1617000000000!5m2!1sid!2sid"
+            title="Lokasi Panti Asuhan Cahaya Harapan Indonesia — Menteng, Jakarta Pusat"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo">
+              <div class="nav-logo-icon">
+                <i data-lucide="leaf"></i>
+              </div>
+              <div class="nav-logo-text">
+                <strong>Cahaya Harapan</strong>
+                <span>Panti Asuhan Indonesia</span>
+              </div>
+            </div>
+            <p>
+              Membangun generasi Indonesia yang tangguh, berakhlak mulia, dan berdaya
+              sejak tahun 2005. Bersama kita memberi cahaya untuk masa depan mereka.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Facebook kami">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram kami">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Twitter / X kami">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="YouTube kami">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Tautan Cepat</h4>
+            <ul>
+              <li><a href="#tentang">Tentang Kami</a></li>
+              <li><a href="#program">Program</a></li>
+              <li><a href="#galeri">Galeri</a></li>
+              <li><a href="#donasi">Cara Berdonasi</a></li>
+              <li><a href="#kontak">Hubungi Kami</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Informasi</h4>
+            <ul>
+              <li><a href="#donasi">Laporan Keuangan</a></li>
+              <li><a href="#kontak">Program Relawan</a></li>
+              <li><a href="#tentang">Berita &amp; Artikel</a></li>
+              <li><a href="#donasi">Rekening Donasi</a></li>
+              <li><a href="#kontak">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Panti Asuhan Cahaya Harapan Indonesia. Seluruh hak cipta dilindungi.</p>
+          <span class="footer-bottom-badge">Dibuat dengan sepenuh hati untuk Indonesia</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
