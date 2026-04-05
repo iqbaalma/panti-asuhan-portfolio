@@ -84,6 +84,9 @@ nav {
 }
 .nav-overlay.active { opacity: 1; pointer-events: all; }
 
+/* Sembunyikan sidebar di layar desktop */
+.mobile-sidebar { display: none; }
+
 /* ── HERO ── */
 .hero { min-height: 100vh; padding: 130px 5% 80px; position: relative; overflow: hidden; }
 .hero::before {
